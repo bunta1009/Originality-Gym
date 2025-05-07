@@ -758,6 +758,12 @@ footer {
 }
 
 /* ========= レスポンシブ対応 ========= */
+@media (max-width: 1300px) {
+  #interior {
+    height: 700px;
+  }
+}
+
 @media (max-width: 1128px) {
   .section-title h2 {
     position: relative;
@@ -783,8 +789,7 @@ footer {
   }
 
   #interior {
-    height: 600px;
-    margin-top: 60vh;
+    margin-top: 62vh;
   }
 
   .area {
@@ -871,7 +876,7 @@ footer {
   /* Meet Our Trainers */
   .trainer-list {
     max-height: 450px;
-    gap: 40px;
+    gap: 5%;
   }
 
   .trainer-list article {
@@ -915,6 +920,11 @@ footer {
     line-height: 1.5;
     margin-top: 10px;
   }
+
+  .footer-left {
+    margin: 10px 0 0 40px;
+  }
+
 }
 
 @media (max-width: 1013px) {
@@ -924,7 +934,7 @@ footer {
   }
 
   #interior {
-    height: 480px;
+    height: 600px;
   }
 
   .area {
@@ -1006,6 +1016,14 @@ footer {
   }
 }
 
+@media (max-width: 920px) {
+  #interior {
+    height: 500px;
+  }
+
+}
+
+
 @media (max-width: 768px) {
   #navi li {
     position: relative;
@@ -1062,7 +1080,16 @@ footer {
 
   .map iframe {
     height: 400px;
-  }  
+  }
+    
+  footer .logo {
+    width: 175px;
+    height: 175px;
+  }
+
+  .footer-left {
+    margin: 20px;
+  }
   
 }
 
@@ -1348,6 +1375,12 @@ header.open .hamburger span:nth-child(3) {
 }
 
 @media (max-width: 487px) {
+  header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+
   .Catchphrase_1,
   .Catchphrase_2 {
     font-size: 28px;
@@ -1429,12 +1462,6 @@ header.open .hamburger span:nth-child(3) {
 }
 
 @media (max-width: 375px) {
-  header .logo {
-    width: 80px;
-    height: 80px;
-    margin: 0;
-  }
-
   .Catchphrase_1 {
     padding-left: 7%;
   }

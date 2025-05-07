@@ -164,7 +164,6 @@ $(window).on('load', function () {
     $("body,html").animate({ scrollTop: 0 }, 500);
 
     // イベントが親要素へ伝播しないための記述
-    // ※詳しく知りたい方は「イベント　バブリング」または「jQuery バブリング」で調べてみてください
     return false;
   });
 
@@ -173,8 +172,6 @@ $(window).on('load', function () {
   ===================================================*/
   // ページ内リンクのイベント
   $('a[href^="#"]').click(function () {
-    // aタグのhref属性の値が#で始まる要素をクリックした時に実行する
-    // 'a[href^=#]'：「aタグのhref属性で値が#で始まる要素だったとき」
 
     // リンクを取得 クリックされたaタグのhref属性の中身をhrefという変数に代入する （#menuなど）をhrefという変数に代入する
     let href = $(this).attr("href");
@@ -194,10 +191,8 @@ $(window).on('load', function () {
     $("html, body").animate({ scrollTop: position }, 600, "swing");
     return false;
   });
-  // {scrollTop:position}で、ページトップからposition分だけスクロールするという指定をしているいる。
+  // {scrollTop:position}で、ページトップからposition分だけスクロールするという指定をしている。
   // linear：常に同じ速さで動く swing：始めはゆっくり動いて、途中はちょっと速め、最後はゆっくりと動く
-  // 出発地点をクリックすると、URLの末尾にIDタグ(例.https://coffee.com#menu)が付与されてしまう。
-  // これを防ぐために、最後に１文return falseを追加します。
 
 
 
