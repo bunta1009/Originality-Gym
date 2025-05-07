@@ -1,0 +1,1478 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title p::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 16px;
+  background: #00C659;
+}
+
+.section-title h2 {
+  position: relative;
+  font-size: 64px;
+}
+
+.section-title p {
+  position: relative;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background-color: #2D2D2D;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.button:hover {
+  border: 2px solid #2D2D2D;
+  background-color: #fff;
+  color: #2D2D2D;
+  transform: scale(1.05);
+}
+
+/* ハンバーガー */
+.hamburger {
+  display: none;
+}
+
+#navi {
+  display: block;
+  position: static;
+  background: transparent;
+  height: auto;
+  color: inherit;
+}
+
+#navi img {
+  display: none;
+}
+
+#navi ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-top: 40px;
+}
+
+#navi li {
+  margin-left: 20px;
+}
+
+#navi a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 0 20px;
+}
+
+#navi ul {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+}
+
+#navi li {
+  position: relative;
+  margin-left: 20px;
+}
+
+#navi li:last-child {
+  margin: 0 20px 0 20px;
+}
+
+#navi a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navi a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #00C659;
+  bottom: -1px;               
+  transform: scale(0, 1);     
+  transform-origin: left top; 
+  transition: transform 0.3s; 
+}
+  
+#navi a:hover::after {
+  transform: scale(1, 1);     
+}
+
+/* メインビジュアル */
+.mainvisual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+.Catchphrase_1 {
+  align-self: flex-start;
+  color: #fff;
+  padding-left: 5%;
+  font-size: 88px;
+}
+
+.Catchphrase_2 {
+  align-self: flex-end;
+  color: #fff;
+  padding: 2% 5% 0 0;
+  font-size: 88px;
+}
+
+.slide-left {
+  animation: slide-left 1.5s ease-out 0s 1 forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform:  translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slide-right 1.5s ease-out 0s 1 forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform:  translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-bottom {
+  animation: slide-bottom 1.5s ease-out 0s 1 forwards;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform:  translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.sub-catch {
+  position: absolute;
+  top: 80%;
+  left: 7%;
+  color: #fff;
+  font-size: 32px;
+}
+
+.sub-catch span {
+  position: absolute;
+  content: "";
+  top: 25%;
+  left: -8%;
+  height: 2px;
+  width: 24px;
+  background: #00C659;
+}
+
+.mainvisual img {
+  filter: brightness(0.5);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide img {
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  object-fit: cover;
+  animation: slideAnime 24s ease infinite;
+}
+ 
+ /*=== スライドのアニメーションを段差で開始する ========= */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 8s }
+.slide img:nth-of-type(3) { animation-delay: 16s }
+ 
+ /*=== スライドのアニメーション ========================= */
+@keyframes slideAnime{
+   0% { opacity: 0 }
+   16% { opacity: 1 }
+  33% { opacity: 1 }
+  49% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+
+/* Gym Interior */
+/* 各エリアごとの hover（リンクごと） */
+#interior {
+  height: 900px;
+  margin-top: 90vh;
+  padding: 0 60px;
+}
+
+
+a:hover rect.cls-4 {
+  fill: #00C659 !important;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 80%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal .close {
+  position: absolute;
+  top: 5px; right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Our Services */
+#services {
+  min-height: 900px;
+  padding: 0 60px 80px;
+  background-color: #2D2D2D;
+  font-weight: bold;
+}
+
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tab li a{
+	display: block;
+	background:#ddd;
+  color: #2D2D2D;
+	margin:2px 2px;
+	padding:10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#00a64b;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+  height: 100%;
+	background: #fff;
+  margin-top: 40px;
+	padding: 20px 0px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#services .section-title {
+  padding-top: 32px;
+  color: #fff;
+}
+
+#services img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-list {
+  margin: 60px 0;
+  padding: 0 100px 0 80px;
+  max-height: 520px;
+  background-color: #fff;
+}
+
+.services-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-left {
+  width: 35%;
+}
+
+.services-right {
+  width: 60%;
+
+}
+
+.services-title h3 {
+  font-size: 42px;
+}
+
+.services-title p {
+  position: relative;
+}
+
+.services-title p::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #00C659;
+}
+
+.services-text {
+  height: 72px;
+  margin: 60px 0;
+}
+
+.services-point {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.services-point p {
+  margin-bottom: 40px;
+}
+
+.services-point p::before {
+  content:'● ';
+	color: #2D2D2D;
+}
+
+/* Meet Our Trainers */
+#trainers {
+  padding: 40px 60px 80px;
+}
+
+.trainer-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 520px;
+  margin-top: 80px;
+  overflow: scroll;
+  gap: 60px;
+  color: #fff;
+  background-color: #fff;
+}
+
+/* スクロールバーの全体 */
+::-webkit-scrollbar {
+  width: 0px;  /* 縦スクロールバーの幅 */
+  height: 8px; /* 横スクロールバーの高さ */
+}
+
+/* スクロールバーの軌道（背景部分） */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* スクロールバーのつまみ（動く部分） */
+::-webkit-scrollbar-thumb {
+  background: #00C659;
+  border-radius: 10px;
+}
+
+/* スクロールバーのつまみ（ホバー時） */
+::-webkit-scrollbar-thumb:hover {
+  background: #00a64b;
+}
+
+.trainer-list article {
+  background-color: #2D2D2D;
+}
+
+.trainer-list img {
+  max-width: 400px;
+  max-height: 260px;
+}
+
+.trainer-list h3 {
+  margin: 20px 0 0 20px;
+  font-size: 32px;
+}
+
+.trainer-list p {
+  position: relative;
+  margin: 40px 0 40px 20px;
+}
+
+.trainer-list p::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  height: 100%;
+  width: 2px;
+  background: #00C659;
+}
+
+.trainer-list .button {
+  background-color: #fff;
+  color: #2D2D2D;
+}
+
+.trainer-list .button:hover {
+  border: 2px solid #fff;
+  background-color: #2D2D2D;
+  color: #fff;
+}
+
+/* Location & Directions */
+#location {
+  padding: 40px 60px 80px;
+  margin-top: 40px;
+  background-color: #2D2D2D;
+}
+
+#location .section-title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 680px;
+  margin-top: 40px;
+}
+
+.address {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.address-item {
+  display: flex;
+  margin-top: 60px;
+}
+
+.address-item dt {
+  width: 160px;
+  margin-right: 20px; 
+  font-weight: bold;
+  line-height: 60px; 
+}
+
+.address-item dd {
+  margin: 0;
+  line-height: 60px; 
+}
+
+/* Contact Us */
+#contact {
+  padding: 40px 60px 80px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  padding-top: 80px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  padding: 40px 60px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* 入力フィールドのフォーカス時 */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #00C659;
+  outline: none;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  background-color: #2D2D2D;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid transparent; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s, border-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #2D2D2D;
+  border-color: #2D2D2D; 
+  transform: scale(1.05);
+}
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 360px;
+  background-color: #2D2D2D;
+}
+
+.footer-left {
+  width: 50%;
+  margin: 10px 0 0 80px;
+}
+
+.footer-left p {
+  margin-top: 40px;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.icon::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  height: 100%;
+  width: 2px;
+  background: #00C659;
+}
+
+.icon li {
+  margin-right: 20px;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.line img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-right {
+  width: 50%;
+}
+
+.footer-menu {
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+}
+
+.footer-menu::before{
+  position: absolute;
+  content: "";
+  left: -10px;
+  height: 100%;
+  width: 2px;
+  background: #00C659;
+}
+
+.footer-menu li {
+  margin-right: 40px;
+  font-size: 24px;
+}
+
+.footer-menu li:first-child {
+  margin-left: 10px;
+}
+
+.footer-menu a {
+  color: #fff;
+}
+
+.copy-right {
+  background-color: #2D2D2D;
+  color: #fff;
+  text-align: center;
+}
+
+/*-------------------------------------------
+トップへ戻るボタン
+-------------------------------------------*/
+/*
+右下に固定で配置
+表示・非表示の切り替えはjQueryで行うため、詳細は「main.js」のコメントを参照
+*/
+.to-top {
+  width: 50px;
+  height: 50px;
+  background-color: #121212;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+/*
+中の三角は疑似要素で作成
+*/
+.to-top::after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: relative;
+  left: 30%;
+}
+
+/* ========= レスポンシブ対応 ========= */
+@media (max-width: 1128px) {
+  .section-title h2 {
+    position: relative;
+    font-size: 52px;
+  }
+
+  .mainvisual,
+  .slide {
+    height: 70vh;
+  }
+
+  .heading {
+    top: 25%;
+  }
+
+  .Catchphrase_1,
+  .Catchphrase_2 {
+    font-size: 64px;
+  }
+
+  .sub-catch {
+    font-size: 24px;
+  }
+
+  #interior {
+    height: 600px;
+    margin-top: 60vh;
+  }
+
+  .area {
+    margin-top: 20px;    /* ← 以前は40px〜60pxぐらい？減らす */
+    padding-top: 20px;
+  }
+  
+  .services-title h3 {
+    font-size: 32px;   
+  }
+
+  .services-text {
+    font-size: 13px;
+    line-height: 1.5;
+  } 
+  
+  .services-title p::after {
+    bottom: 0px;
+  } 
+
+  #services .button {
+    align-self: start; /* 左寄せ（または center/right に変更可能） */
+    padding: 10px 20px;
+    font-size: 14px;
+    }
+
+  #services img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+  
+  .services-text {
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .services-left {
+    width: 45%;
+    height: 100%; 
+  }
+  
+  .services-right {
+    font-size: 15px;         /* 小さすぎず大きすぎず */
+    line-height: 1.8;        /* 行間をゆるめて読みやすく */
+    letter-spacing: 0.25px;  /* わずかに間隔を空けてゆとりを出す */
+    max-width: 500px;        /* 長すぎる1行を抑える */
+  }
+
+  .services-list {
+    margin: 60px 0;
+    padding: 0 40px 20px;
+    max-height: none;
+    background-color: #fff;
+  }
+
+  .services-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    height: 360px; /* ← 高さを明示して詰める。必要に応じて微調整 */
+    padding: 20px 40px;
+  }
+
+  .services-point {
+    margin-bottom: 20px;
+  }
+
+  .services-point p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  #experience .services-point p,
+  #discount .services-point p,
+  #visitor .services-point p {
+    margin-bottom: 21px;
+  }
+
+  /* 以下は他のセクションの調整 */
+  /* Meet Our Trainers */
+  .trainer-list {
+    max-height: 450px;
+    gap: 40px;
+  }
+
+  .trainer-list article {
+    max-width: 300px;
+    max-height: 440px;
+  }
+
+  .trainer-list img {
+    width: 300px;
+  }
+
+  .trainer-list p {
+    font-size: 12px;
+  }
+  
+  .trainer-list .button {
+    width: 250px;
+    font-size: 12px;
+  }
+
+  .map iframe {
+  height: 480px;
+}  
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .address {
+    margin-top: 30px;
+  }
+
+  .address-item {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .address-item dt,
+  .address-item dd {
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1013px) {
+  .Catchphrase_1,
+  .Catchphrase_2 {
+    font-size: 52px;
+  }
+
+  #interior {
+    height: 480px;
+  }
+
+  .area {
+    margin-top: 20px;
+    padding: 10px 0 0;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .services-list li {
+    flex-direction: column;
+    height: auto;
+    padding: 0px;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #services {
+    padding-bottom: 10px;
+  }
+
+  #services img {
+    max-height: 300px;
+    height: auto;
+  }
+
+  .services-title h3 {
+    font-size: 24px;
+  }
+
+  .services-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .services-point {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-point p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  #experience .services-point p,
+  #discount .services-point p,
+  #visitor .services-point p {
+    margin-bottom: 10px;
+  }
+
+
+  #services .button {
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0;
+    font-size: 14px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .address-item {
+    flex-direction: column;
+  }
+
+  .address-item dt,
+  .address-item dd {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #navi li {
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .trainer-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .trainer-list article {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    background-color: #2D2D2D;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .trainer-list img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .trainer-list h3 {
+    font-size: 24px;
+  }
+
+  .trainer-list p {
+    margin: 10px 0 20px;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+
+  .trainer-list p::before {
+    left: 7px;
+  }  
+
+  .trainer-list .button {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 280px;
+    margin: 20px auto 10px;
+    font-size: 14px;
+  }
+
+  .map iframe {
+    height: 400px;
+  }  
+  
+}
+
+@media (max-width: 666px) {
+  .Catchphrase_2 {
+    margin-top: 40px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #2D2D2D;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 80%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  /* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 25%;
+}
+
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 50%;
+}
+
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 75%;
+}
+
+header.open .hamburger span:nth-child(1) {
+  top: 47%;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg); /* ← 合体させる！ */
+}
+
+header.open .hamburger span:nth-child(2),
+header.open .hamburger span:nth-child(3) {
+  top: 47%;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); /* ← 合体させる！ */
+}
+
+  #navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #2D2D2D;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 998;
+  }
+
+  header.open #navi {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #navi img {
+    display: block;
+    margin: 30px 0 0 40px;
+  }  
+
+  #navi ul {
+    list-style: none;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #navi a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  .Catchphrase_1,
+  .Catchphrase_2 {
+    font-size: 36px;
+    padding: 0 5%;
+  }
+
+  .sub-catch {
+    font-size: 18px;
+    left: 12%;
+  }
+
+  .sub-catch span {
+    left: -10%;
+    width: 16px;
+  }
+  
+
+  #interior {
+    height: auto;
+    padding: 0 20px;
+  }  
+
+  .area {
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  #services {
+    padding: 30px 20px;
+  }
+
+  .services-title h3 {
+    font-size: 20px;
+  }
+
+  .services-title p {
+    font-size: 12px;
+  }
+
+  .services-list {
+    margin-bottom: 0;
+  }
+
+  .services-text {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  .services-point {
+    grid-template-columns: 1fr;
+  }
+
+  .services-point p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  #trainers {
+    padding: 30px 20px;
+  }
+
+  .trainer-list {
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .trainer-list article {
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .trainer-list h3 {
+    font-size: 20px;
+    margin-left: 16px;
+  }
+
+  .trainer-list p {
+    font-size: 12px;
+    padding: 0 16px;
+    margin-left: 10px;
+  }
+
+  .trainer-list p::before {
+    left: 0;
+  }
+
+  .trainer-list .button {
+    width: 90%;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  #location,
+  #contact {
+    padding: 30px 20px;
+  }
+
+  .map iframe {
+    height: 320px;
+  }
+
+  .address {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .address-item {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .address-item dt,
+  .address-item dd {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  form input[type="submit"] {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  footer .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .footer-menu li:first-child {
+    margin-left: 0px;
+  }  
+
+  .copy-right {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 487px) {
+  .Catchphrase_1,
+  .Catchphrase_2 {
+    font-size: 28px;
+  }
+
+  .sub-catch {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+  }
+
+  #navi ul {
+    padding-top: 100px;
+    gap: 16px;
+  }
+
+  #navi a {
+    font-size: 16px;
+  }
+
+  .tab li a {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 4px;
+  }
+
+  .services-list {
+    padding: 0 16px;
+  }
+
+  .services-title h3 {
+    font-size: 20px;
+  }
+
+  .services-text {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+
+  .services-point {
+    display: block; /* 縦一列に */
+  }
+
+  .services-point p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .trainer-list h3 {
+    font-size: 18px;
+  }
+
+  .trainer-list p {
+    font-size: 11px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 13px;
+  }
+
+  form input[type="submit"] {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+
+  .Catchphrase_1 {
+    padding-left: 7%;
+  }
+  
+  .Catchphrase_2 {
+    padding: 2% 7% 0 0;
+  }
+  
+  .Catchphrase_1,
+  .Catchphrase_2 {
+    font-size: 22px;
+  }
+
+  .sub-catch {
+    font-size: 14px;
+  }
+
+  .hamburger {
+    width: 44px;
+    height: 44px;
+    top: 8px;
+    right: 8px;
+  }
+
+  #navi a {
+    font-size: 15px;
+  }
+
+  #navi img {
+    margin: 10px 0 0 20px;
+  }  
+
+  .trainer-list h3 {
+    font-size: 16px;
+  }
+
+  form input[type="submit"] {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
