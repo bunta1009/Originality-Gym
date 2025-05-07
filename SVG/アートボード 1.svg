@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ジム内装" data-name="ジム内装" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .25em;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        glyph-orientation-vertical: 0deg;
+        text-orientation: upright;
+        writing-mode: tb;
+      }
+
+      .cls-3, .cls-5, .cls-6, .cls-7 {
+        font-size: 24px;
+      }
+
+      .cls-3, .cls-6, .cls-8, .cls-7 {
+        font-family: HiraMaruProN-W4-83pv-RKSJ-H, 'Hiragino Maru Gothic ProN';
+      }
+
+      .cls-5 {
+        font-family: KozGoPr6N-Regular-83pv-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .cls-8 {
+        font-size: 32px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="260" y="190" width="1400" height="700"/>
+  <a xlink:href="#studio">
+    <g>
+      <rect class="cls-4" x="260.5" y="540.5" width="469" height="349"/>
+      <path d="M729,541v348h-468v-348h468M730,540h-470v350h470v-350h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#stretch">
+    <g>
+      <rect class="cls-4" x="1306.5" y="190.5" width="353" height="208"/>
+      <path d="M1659,191v207h-352v-207h352M1660,190h-354v209h354v-209h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#machine">
+    <g>
+      <rect class="cls-4" x="1103.95" y="399.5" width="555.55" height="490"/>
+      <path d="M1659,400v489h-554.55v-489h554.55M1660,399h-556.55v491h556.55v-491h0Z"/>
+    </g>
+  </a>
+  <text class="cls-5" transform="translate(1063.89 580.97)"><tspan x="0" y="0">休憩エリア</tspan></text>
+  <a xlink:href="#shower">
+    <g>
+      <rect class="cls-4" x="260.5" y="190.5" width="165.4" height="349"/>
+      <path d="M425.4,191v348h-164.4V191h164.4M426.4,190h-166.4v350h166.4V190h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#shower">
+    <text class="cls-7" transform="translate(291.89 375.75)"><tspan x="0" y="0">シャワー室</tspan></text>
+  </a>
+  <a xlink:href="#locker">
+    <g>
+      <rect class="cls-4" x="495.5" y="485.5" width="234" height="54"/>
+      <path d="M729,486v53h-233v-53h233M730,485h-235v55h235v-55h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#locker">
+    <text class="cls-7" transform="translate(573.92 520.51)"><tspan x="0" y="0">ロッカー</tspan></text>
+  </a>
+  <a xlink:href="#studio">
+    <text class="cls-8" transform="translate(428.76 726.56)"><tspan x="0" y="0">スタジオ</tspan></text>
+  </a>
+  <a xlink:href="#machine">
+    <text class="cls-8" transform="translate(1286.45 654.24)"><tspan x="0" y="0">マシンエリア</tspan></text>
+  </a>
+  <a xlink:href="#freewhight">
+    <g>
+      <rect class="cls-4" x="758.5" y="190.5" width="547" height="208"/>
+      <path d="M1305,191v207h-546v-207h546M1306,190h-548v209h548v-209h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#freewhight">
+    <text class="cls-8" transform="translate(870.68 311.43)"><tspan x="0" y="0">フリーウェイトエリア</tspan></text>
+  </a>
+  <a xlink:href="#reception">
+    <g>
+      <rect class="cls-4" x="730.5" y="540.5" width="100" height="214"/>
+      <path d="M830,541v213h-99v-213h99M831,540h-101v215h101v-215h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#reception">
+    <text class="cls-7" transform="translate(758 658.08)"><tspan x="0" y="0">受付</tspan></text>
+  </a>
+  <a xlink:href="#stretch">
+    <text class="cls-7" transform="translate(1346.32 311.43)"><tspan x="0" y="0">ストレッ</tspan><tspan class="cls-1" x="96" y="0">チ,</tspan><tspan x="139.22" y="0">ヨガエリア</tspan></text>
+  </a>
+  <a xlink:href="#toilet">
+    <g>
+      <rect class="cls-4" x="483" y="190.5" width="168.66" height="92"/>
+      <path d="M651.16,191v91h-167.66v-91h167.66M652.16,190h-169.66v93h169.66v-93h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#toilet">
+    <text class="cls-7" transform="translate(531.91 248.17)"><tspan x="0" y="0">トイレ</tspan></text>
+  </a>
+  <a xlink:href="#break">
+    <g>
+      <rect class="cls-4" x="1028.95" y="500.05" width="74" height="284.76"/>
+      <path d="M1102.45,500.55v283.76h-73v-283.76h73M1103.45,499.55h-75v285.76h75v-285.76h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#changing">
+    <g>
+      <rect class="cls-4" x="705.5" y="190.5" width="53" height="138"/>
+      <path d="M758,191v137h-52v-137h52M759,190h-54v139h54v-139h0Z"/>
+    </g>
+  </a>
+  <a xlink:href="#changing">
+    <g>
+      <text class="cls-3" transform="translate(735.79 224.14)"><tspan x="0" y="0">更衣室</tspan></text>
+      <text class="cls-6" transform="translate(735.79 224.14)"><tspan x="0" y="0">更衣室</tspan></text>
+    </g>
+  </a>
+  <a xlink:href="#break">
+    <g>
+      <text class="cls-3" transform="translate(1063.94 608.54)"><tspan x="0" y="0">休憩室</tspan></text>
+      <text class="cls-6" transform="translate(1063.94 608.54)"><tspan x="0" y="0">休憩室</tspan></text>
+    </g>
+  </a>
+</svg>
