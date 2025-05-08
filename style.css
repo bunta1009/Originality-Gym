@@ -795,7 +795,7 @@ footer {
   }
 
   #interior {
-    margin-top: 62vh;
+    margin-top: 60vh;
   }
 
   .area {
@@ -1255,7 +1255,7 @@ header.open .hamburger span:nth-child(3) {
 
   #interior {
     height: auto;
-    margin-top: 60vh;
+    margin-top: 58vh;
     padding: 0 20px;
   }  
 
@@ -1267,6 +1267,9 @@ header.open .hamburger span:nth-child(3) {
   #services {
     padding: 30px 20px;
   }
+  #services .section-title {
+    padding-top: 0;
+  }  
 
   .services-title h3 {
     font-size: 20px;
@@ -1407,6 +1410,13 @@ header.open .hamburger span:nth-child(3) {
 }
 
 @media (max-width: 487px) {
+  #services,
+  #trainers,
+  #location,
+  #contact {
+    padding-top: 20px;
+  }
+
   header .logo {
     width: 80px;
     height: 80px;
@@ -1444,6 +1454,11 @@ header.open .hamburger span:nth-child(3) {
     padding: 8px 12px;
     margin: 4px;
   }
+
+  #interior {
+    margin-top: 61vh;
+  }  
+
 
   .services-list {
     padding: 0 16px;
