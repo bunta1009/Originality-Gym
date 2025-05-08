@@ -393,6 +393,14 @@ a:hover rect.cls-4 {
   object-fit: cover;
 }
 
+#experience img {
+  object-position: 60% 50%;
+}
+
+#visitor img {
+  object-position: 35% 50%;
+}
+
 .services-list {
   margin: 60px 0;
   padding: 0 100px 0 80px;
@@ -534,7 +542,6 @@ a:hover rect.cls-4 {
 /* Location & Directions */
 #location {
   padding: 40px 60px 80px;
-  margin-top: 40px;
   background-color: #2D2D2D;
 }
 
@@ -575,7 +582,6 @@ a:hover rect.cls-4 {
 /* Contact Us */
 #contact {
   padding: 40px 60px 80px;
-  margin-top: 40px;
 }
 
 form {
@@ -933,6 +939,10 @@ footer {
     font-size: 52px;
   }
 
+  .sub-catch {
+    left: 8%;
+  }
+
   #interior {
     height: 600px;
   }
@@ -963,8 +973,9 @@ footer {
   }
 
   #services img {
-    max-height: 300px;
+    max-height: 350px;
     height: auto;
+    object-position: 40% 20%;
   }
 
   .services-title h3 {
@@ -1019,7 +1030,22 @@ footer {
 @media (max-width: 920px) {
   #interior {
     height: 500px;
+    padding: 0 40px;
   }
+
+  #services {
+    padding: 0 40px 40px;
+  }
+
+  #trainers {
+    padding: 40px 40px 80px;
+  }
+
+  #location,
+  #contact {
+    padding: 40px 40px 80px;
+  }
+
 
 }
 
@@ -1035,6 +1061,7 @@ footer {
     align-items: center;
     gap: 60px;
     width: 100%;
+    margin-top: 40px;
     padding: 0 16px;
     box-sizing: border-box;
   }
@@ -1217,7 +1244,7 @@ header.open .hamburger span:nth-child(3) {
 
   .sub-catch {
     font-size: 18px;
-    left: 12%;
+    left: 7%;
   }
 
   .sub-catch span {
@@ -1228,6 +1255,7 @@ header.open .hamburger span:nth-child(3) {
 
   #interior {
     height: auto;
+    margin-top: 60vh;
     padding: 0 20px;
   }  
 
@@ -1274,6 +1302,10 @@ header.open .hamburger span:nth-child(3) {
     gap: 40px;
     padding: 0 10px;
   }
+
+  .trainer-list img {
+    max-width: 600px;
+  }  
 
   .trainer-list article {
     max-width: 100%;
@@ -1344,8 +1376,8 @@ header.open .hamburger span:nth-child(3) {
   }
 
   footer .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   .footer-left,
@@ -1388,6 +1420,7 @@ header.open .hamburger span:nth-child(3) {
 
   .sub-catch {
     font-size: 16px;
+    left: 10%;
   }
 
   .hamburger {
@@ -1454,6 +1487,13 @@ header.open .hamburger span:nth-child(3) {
   .section-title p {
     font-size: 13px;
   }
+
+  .address-item dt,
+  .address-item dd {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
 
   form input[type="submit"] {
     font-size: 14px;
