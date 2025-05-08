@@ -1456,7 +1456,7 @@ header.open .hamburger span:nth-child(3) {
   }
 
   #interior {
-    margin-top: 61vh;
+    margin-top: 60.5vh;
   }  
 
 
@@ -1529,6 +1529,11 @@ header.open .hamburger span:nth-child(3) {
   .Catchphrase_2 {
     font-size: 22px;
   }
+
+  #interior {
+    margin-top: 57.5vh;
+  }  
+
 
   .sub-catch {
     font-size: 14px;
