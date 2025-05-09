@@ -1125,10 +1125,6 @@ footer {
     margin-top: 40px;
   }
 
-  .sub-catch {
-    top: 82%;
-  }
-
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -1432,15 +1428,9 @@ header.open .hamburger span:nth-child(3) {
     font-size: 28px;
   }
 
-  .mainvisual img  {
-    height: 550px;
-  }
-
   .sub-catch {
     font-size: 16px;
     left: 10%;
-    top: 65%;
-
   }
 
   .hamburger {
@@ -1471,7 +1461,7 @@ header.open .hamburger span:nth-child(3) {
   }
 
   #interior {
-    margin-top: 50vh;
+    margin-top: 61vh;
   }  
 
 
@@ -1592,4 +1582,15 @@ header.open .hamburger span:nth-child(3) {
     font-size: 12px;
     }
 
+  .mainvisual img  {
+    height: 500px;
+  }
+
+  .sub-catch {
+    top: 60%;
+  }
+
+  #interior {
+    margin-top: 42vh;
+  }  
 }
