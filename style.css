@@ -1430,7 +1430,12 @@ header.open .hamburger span:nth-child(3) {
 
   .sub-catch {
     font-size: 16px;
+    top: 65%;
     left: 10%;
+  }
+
+  .mainvisual img  {
+    height: 550px;
   }
 
   .hamburger {
@@ -1461,7 +1466,7 @@ header.open .hamburger span:nth-child(3) {
   }
 
   #interior {
-    margin-top: 61vh;
+    margin-top: 49vh;
   }  
 
 
