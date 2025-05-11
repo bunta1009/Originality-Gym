@@ -1255,7 +1255,7 @@ header.open .hamburger span:nth-child(3) {
 
   #interior {
     height: auto;
-    margin-top: 58vh;
+    margin-top: 57vh;
     padding: 0 20px;
   }  
 
@@ -1435,7 +1435,7 @@ header.open .hamburger span:nth-child(3) {
   }
 
   .mainvisual img  {
-    height: 480px;
+    height: 530px;
   }
 
   .hamburger {
@@ -1466,7 +1466,7 @@ header.open .hamburger span:nth-child(3) {
   }
 
   #interior {
-    margin-top: 47vh;
+    margin-top: 45vh;
   }  
 
 
@@ -1540,12 +1540,12 @@ header.open .hamburger span:nth-child(3) {
     font-size: 22px;
   }
 
-  .mainvisual img  {
+  /* .mainvisual img  {
     height: 400px;
   }
-
+ */
   .sub-catch {
-    top: 68z%;
+    top: 68%;
   }
 
   #interior {
