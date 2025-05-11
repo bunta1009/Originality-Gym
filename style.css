@@ -53,6 +53,16 @@ a {
   transform: scale(1.05);
 }
 
+#interior {
+  overflow-x: hidden; 
+}
+
+#interior svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ハンバーガー */
 .hamburger {
   display: none;
@@ -1540,10 +1550,6 @@ header.open .hamburger span:nth-child(3) {
     font-size: 22px;
   }
 
-  /* .mainvisual img  {
-    height: 400px;
-  }
- */
   .sub-catch {
     top: 68%;
   }
