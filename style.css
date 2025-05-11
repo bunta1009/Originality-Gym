@@ -1479,6 +1479,11 @@ header.open .hamburger span:nth-child(3) {
     margin-top: 45vh;
   }  
 
+#modal-title {
+    font-size: 18px; 
+  }
+
+
 
   .services-list {
     padding: 0 16px;
