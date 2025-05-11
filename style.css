@@ -1065,10 +1065,6 @@ footer {
     position: relative;
     margin-left: 10px;
   }
-
-  #interior {
-    margin-top: 100vh; /* または 110vh などに調整 */
-  }
   
   .trainer-list {
     flex-direction: column;
