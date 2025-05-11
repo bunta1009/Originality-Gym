@@ -26,7 +26,7 @@ const areaInfo = {
   stretch: {
     title: "ストレッチ・ヨガエリア",
     desc: "身体を整えるストレッチやリラックスできるヨガができる静かなエリアです。",
-    img: "./img/ヨガエリア.jpeg"
+    img: "img/yoga-eria.jpeg"
   },
   machine: {
     title: "マシンエリア",
