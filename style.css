@@ -7,7 +7,14 @@
 }
 
 html, body {
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 a {
@@ -1069,6 +1076,21 @@ footer {
   #navi li {
     position: relative;
     margin-left: 10px;
+  }
+	
+  .trainer-list,
+  .services-list,
+  #interior,
+  #services,
+  #trainers,
+  #location,
+  #contact,
+  header {
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-wrap: wrap;
   }
   
   .trainer-list {
