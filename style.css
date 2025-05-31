@@ -1073,6 +1073,10 @@ footer {
 
 
 @media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
   #navi li {
     position: relative;
     margin-left: 10px;
